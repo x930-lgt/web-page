@@ -1,29 +1,29 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     box-sizing: border-box;
   }
 
   /* ヘッダー */
 
-#header{
-    background-image: url(./写真/catbook.jpg);
+#header {
+    background-image: url(./images/hero-cat.jpg);
     width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: 31% top;
     position: relative;
 
 }
 
-.header-title1{
+.header-title-cat {
     color: white;
     text-shadow: 1px 2px 3px black;
     position: absolute;
@@ -35,7 +35,7 @@ html{
     font-style: normal;
 }
 
-.header-title2{
+.header-title-and {
     color: white;
     text-shadow: 1px 2px 3px black;
     position: absolute;
@@ -47,7 +47,7 @@ html{
     font-style: normal;
 }
 
-.header-title3{
+.header-title-cafe {
     color: white;
     text-shadow: 1px 2px 3px black;
     position: absolute;
@@ -59,7 +59,7 @@ html{
     font-style: normal;
 }
 
-.nav{
+.nav {
     background-color:black;
     width: 100vw;
     height: 100px;
@@ -67,7 +67,7 @@ html{
     border-bottom: double 3px grey;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -75,13 +75,13 @@ nav ul{
     right: 50px;
 }
 
-nav li{
+nav li {
     margin-left: 40px;
     list-style: none;
 }
 
 
-.nav-text{
+.nav-link {
     color: white;
     text-decoration: none;
     font-size: 22px;
@@ -93,13 +93,13 @@ nav li{
     transition: background-size 0.3s;
 }
 
-.nav-text:hover{
+.nav-link:hover {
     background-position: bottom left;
     background-size: 100% 1px; 
     opacity: 0.7;
 }
 
-.cat-logo{
+.nav-logo {
     display: block;
     width: 90px;
     height: 90px;
@@ -111,8 +111,8 @@ nav li{
 
 /* コンセプト */
 
-.concept-space{
-    background-image: url(./写真/大理石城.jpg);
+.main-separate {
+    background-image: url(./images/marble2.jpg);
     width: 100%;
     height: 70px;
     background-size: cover;
@@ -121,8 +121,8 @@ nav li{
     background-attachment: fixed;
 }
 
-.concept-img{
-    background-image: url(./写真/猫①.webp);
+.concept-image { 
+    background-image: url(./images/concept-cat.webp);
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -131,16 +131,16 @@ nav li{
     background-attachment: fixed;
 }
 
-.cat-logo2{
+.site-logo {
     display: block;
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    filter: brightness();
+    padding-top: 10px;
 }
 
-.concept-box{
-    background-image: url(./写真/大理石.avif);
+.concept-content {
+    background-image: url(./images/marble.avif);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -149,14 +149,14 @@ nav li{
     position: relative;
 }
 
-.concept-neko{
+.concept-cat-image {
     width: 300px;
     height: auto;
     position: absolute;
     bottom: 0;
 }
 
-.concept-title{
+.concept-title {
     font-size: 80px;
     font-family: "Emilys Candy", serif;
     text-align: center;
@@ -165,13 +165,13 @@ nav li{
     padding-top: 60px;
 }
 
-.concept-text-box{
+.concept-description {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.concept-text{
+.concept-text {
     color: black;
     font-size: 24px;
     margin-top: 50px;
@@ -180,7 +180,7 @@ nav li{
     font-weight: bold;
 }
 
-.page_top_btn {
+.page-top-button {
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -191,20 +191,24 @@ nav li{
     z-index: 99;
 }
 
-.page_top_btn img{
+.page-top-button img {
     width: 100%;
     height: auto;
     transition: filter 0.3s ease;
 }
 
-.page_top_btn:hover img{
+.page-top-button:hover img {
     filter: invert(100%);
 }
 
-/* 料金表 */
+/* 料金システム */
 
-.kakaku-img{
-    background-image: url(./写真/ねこ３.jpg);
+.price-image .site-logo {
+    filter: brightness(0);
+}
+
+.price-image {
+    background-image: url(./images/price-cat.jpg);
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -213,8 +217,8 @@ nav li{
     background-attachment: fixed;
 }
 
-.kakaku-box{
-    background-image: url(./写真/大理石.avif);
+.price-content {
+    background-image: url(./images/marble.avif);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -223,7 +227,7 @@ nav li{
     position: relative;
 }
 
-.huti-migi-ue{
+.border-right-top {
     width: 350px;
     height: auto;
     position: absolute;
@@ -232,7 +236,14 @@ nav li{
     transform: scale(1, -1);
 }
 
-.huti-migi-sita{
+.border-left-top {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 90px;
+    left: 110px;
+}
+.border-right-bottom {
     width: 350px;
     height: auto;
     position: absolute;
@@ -240,7 +251,7 @@ nav li{
     right: 110px;
 }
 
-.huti-hidari-sita{
+.border-left-bottom {
     width: 350px;
     height: auto;
     position: absolute;
@@ -249,23 +260,7 @@ nav li{
     transform: scale(1, -1);
 }
 
-.huti-hidari-ue{
-    width: 350px;
-    height: auto;
-    position: absolute;
-    top: 90px;
-    left: 110px;
-}
-
-.cat-logo3{
-    display: block;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    filter: brightness(0);
-}
-
-.kakaku-title{
+.price-title {
     font-size: 48px;
     font-family: "Emilys Candy", serif;
     text-align: center;
@@ -274,12 +269,12 @@ nav li{
     padding-top: 75px;
 }
 
-.kakaku-text-box{
+.price-details {
     margin: 0 auto;
     width: fit-content;
 }
 
-.kakaku-subtitle{
+.price-subtitle {
     font-size: 31px;
     font-weight: bold;
     font-family: "Emilys Candy", serif;
@@ -289,43 +284,43 @@ nav li{
     margin-left: 80px;
 }
 
-.kakaku-subtitle span{
+.price-subtitle span {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 5px;
     font-size: 20px;
     font-weight: normal;
 }
 
-.kakaku-subtitle2{
+.price-subtitle-snack {
     font-size: 31px;
     font-weight: bold;
     font-family: "Emilys Candy", serif;
-    margin-top: 40px;
+    margin-top: 30px;
     text-shadow: 1px 2px 3px white;
     margin-left: 85px;
 }
 
-.kakaku-subtitle2 span{
+.price-subtitle-snack span {
     display: inline-block;
     color: black;
-    font-size: 20px;
+    font-size: 22px;
     text-shadow: 1px 2px 3px white;
     font-family: "Emilys Candy", serif;
     font-weight: bold;
-    margin-left: 40px;
+    margin-left: 5px;
 }
 
-.kakaku-ul{
+.price-list {
     margin-left: 130px;
     margin-top: 20px;
     list-style: square;
 }
 
-li::marker{
+li::marker {
     font-size: 15px;
 }
 
-.kakaku-ul li{
+.price-list li {
     color: black;
     font-size: 22px;
     text-shadow: 1px 2px 3px white;
@@ -334,18 +329,18 @@ li::marker{
     font-weight: bold;
 }
 
-.sp-only{
+.sp-only {
     display: none;
 }
 
-.sp-hide{
+.sp-hide {
     display: inline;
 }
 
-/* インフォメーション */
+/* 店舗情報 */
 
-.information-img{
-    background-image: url(./写真/内装猫カフェ.PNG);
+.information-image {
+    background-image: url(./images/interior.PNG);
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -355,8 +350,8 @@ li::marker{
     filter: grayscale(40%)contrast(110%);
 }
 
-.information-box{
-    background-image: url(./写真/大理石.avif);
+.information-content {
+    background-image: url(./images/marble.avif);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -365,13 +360,13 @@ li::marker{
 }
 
 
-.omise-img{
+.store-image {
     width: 400px;
     height: auto;
     border-radius: 20px;
 }
 
-.information-title{
+.information-title {
     font-size: 60px;
     font-family: "Emilys Candy", serif;
     text-align: center;
@@ -381,7 +376,7 @@ li::marker{
     margin-bottom: 30px;
 }
 
-.information-caram{
+.information-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -390,13 +385,13 @@ li::marker{
     padding: 20px;
 }
 
-.information-text-box{
+.information-details {
     padding: 0.5em 1.5em;
     border-top: solid 2px black;
     border-bottom: solid 2px black;
 }
 
-.information-text{
+.information-text {
     color: black;
     font-size: 20px;
     text-shadow: 1px 2px 3px white;
@@ -408,7 +403,7 @@ li::marker{
 
 /* フッター */
 
-.footer-box{
+.footer-content {
     background-color:black;
     width: 100vw;
     height: 30px;
@@ -416,7 +411,7 @@ li::marker{
     border-bottom: double 3px grey;
 }
 
-.footer-text{
+.footer-copyright {
     margin-top: 3px;
     color: white;
     text-align: center;
@@ -426,8 +421,8 @@ li::marker{
 
 /* ランキングページ */
 
-.rankingu-box{
-    background-image: url(./写真/大理石.avif);
+.ranking-content {
+    background-image: url(./images/marble.avif);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -435,7 +430,7 @@ li::marker{
     background-position: center;
 }
 
-.rankingu-title{
+.ranking-title {
     font-size: 50px;
     font-family: "Emilys Candy", serif;
     text-align: center;
@@ -444,7 +439,7 @@ li::marker{
     padding-top: 60px;
 }
 
-.rankingu-gazou-box{
+.ranking-list {
     display: flex;
     align-items: center;
     text-align: center;
@@ -452,7 +447,7 @@ li::marker{
     justify-content: center;
 }
 
-.rankingu-subtitle{
+.cat-name {
     color: black;
     font-size: 24px;
     text-shadow: 1px 2px 3px white;
@@ -461,7 +456,7 @@ li::marker{
     margin-bottom:20px;
 }
 
-.neko-gazou-box{
+.cat-image {
     display: block;
     width: 300px;
     height: 300px;
@@ -469,7 +464,7 @@ li::marker{
     border-radius: 40px;
 }
 
-.rankingu-text{
+.cat-information {
     font-size: 19px;
     text-align: left;
     margin-top: 15px;
@@ -478,12 +473,14 @@ li::marker{
     font-family: "Emilys Candy", serif;
 }
 
+.sp-only {
+    display: none;
+}
 
 /* お約束ページ */
 
-
-.yakusoku-box{
-    background-image: url(./写真/大理石.avif);
+.rules-content {
+    background-image: url(./images/marble.avif);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -491,7 +488,7 @@ li::marker{
     background-position: center;
 }
 
-.yakusoku-title{
+.rules-title {
     font-size: 48px;
     font-family: "Emilys Candy", serif;
     text-align: center;
@@ -501,7 +498,7 @@ li::marker{
     margin-bottom: 30px;
 }
 
-.yakusoku-sub-title{
+.rules-introduction {
     font-size: 22px;
     font-family: "Emilys Candy", serif;
     text-align: center;
@@ -510,7 +507,7 @@ li::marker{
     margin-bottom: 10px;
 }
 
-.yakusoku-sub-title2{
+.rules-notice {
     font-size: 22px;
     font-family: "Emilys Candy", serif;
     text-align: center;
@@ -519,16 +516,16 @@ li::marker{
     margin-bottom: 30px;
 }
 
-.yakusoku-caram{
+.rules-list-container {
     width: fit-content;
     margin: 0 auto;
 }
 
-.yakusoku-ul{
+.rules-list {
     list-style: square;
 }
 
-.yakusoku-ul li{
+.rules-list li {
     color: black;
     font-size: 20px;
     text-shadow: 1px 2px 3px white;
@@ -539,15 +536,17 @@ li::marker{
 }
 
 
-.hamburger-menu{
+.hamburger-menu {
     display: none;
 }
 
 /* レスポンシブ */
 
-@media screen and (max-width:640px){
+@media screen and (max-width:640px) {
 
-#header{
+ /* ヘッダー */
+
+#header {
     width: 100%;
     max-width: 640px;
     height: auto;
@@ -556,7 +555,7 @@ li::marker{
     position: relative;
 }
 
-.nav{
+.nav {
     background-color:black;
     width: 100vw;
     height: 100px;
@@ -564,186 +563,188 @@ li::marker{
     border-bottom: double 3px grey;
 }
 
-.cat-logo{
+.nav-logo {
     width: 90px;
     height: 90px;
     margin: 0 auto;
     margin-top: 5px;
 }
 
-.normal-menu{
+.normal-menu {
     display: none;
 }
 
 
-.header-title1{
+.header-title-cat {
+    left: 5px;
+    bottom: 90px;
+    font-size: 8rem;
+}
+
+.header-title-and {
+    right: 160px;
+    bottom: 77px;
+    font-size: 3rem;
+}
+
+.header-title-cafe {
+    right: 5px;
+    bottom: -30px;
+    font-size: 8rem;
+}
+
+
+/* コンセプト */
+
+.concept-cat-image {
     display: none;
 }
 
-.header-title2{
-    display: none;
-}
-
-.header-title3{
-    display: none;
-   
-}
-
-.concept-space{
-    height: 35px;
-   position: static;
-    
-}
-
-.concept-neko{
-    display: none;
-}
-
-.page_top_btn {
+.page-top-button {
     width: 90px;
     height: 90px;
 }
 
-.concept-img{
-    height: 200px;
-    background-attachment: local;
+.concept-image {
+    height: 150px;
 }
 
-.cat-logo2{
-    display: none;
+.site-logo {
+    width: 150px;
+    height: 150px;
+    padding-top: 5px;
 }
 
-.concept-title{
-    font-size: 55px;
-    padding-top: 70px;
+.concept-title {
+    font-size: 50px;
+    padding-top: 40px;
 }
 
-.concept-text{
+.concept-content {
+    height: 90vh;
+}
+
+.concept-text {
     color: black;
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 35px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.cat-logo3{
+/* 料金システム */
+
+.border-right-top {
     display: none;
 }
 
-.huti-migi-ue{
+.border-left-top {
     display: none;
 }
 
-.huti-migi-sita{
+.border-right-bottom {
     display: none;
 }
 
-.huti-hidari-sita{
+.border-left-bottom {
     display: none;
 }
 
-.huti-hidari-ue{
-    display: none;
+.price-image {
+    height: 150px;
+
 }
 
-.kakaku-img{
-    height: 200px;
-    background-attachment: local;
+.price-title {
+    font-size: 37px;
+    padding-top: 50px;
 }
 
-.kakaku-title{
-    font-size: 40px;
-    padding-top: 60px;
-}
-
-.kakaku-subtitle{
+.price-subtitle {
     font-size: 22px;
     margin-left: 35px;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
-.kakaku-subtitle span{
+.price-subtitle span {
     font-size: 18px;
 }
 
-.kakaku-subtitle2{
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Emilys Candy", serif;
-    margin-bottom: 15px;
-    text-shadow: 1px 2px 3px white;
-    margin-left:20px;
-    margin-top: 40px;
+.price-subtitle-snack {
+    font-size: 22px;
+    margin-left: 35px;
+    margin-top: 20px;
 }
 
-.kakaku-subtitle2 span{
-    display: inline-block;
-    color: black;
-    font-size: 18px;
-    margin-left: 10px;
+.price-subtitle-snack span {
+    font-size: 16px;
+    margin-left: 35px;
 }
 
-.kakaku-ul{
+
+.price-list {
     margin-left: 70px;
     margin-bottom: 0px;
 }
 
-.kakaku-ul li{
+.price-list li {
     font-size: 16px;
     margin-bottom: 13px;
 }
 
-.sp-only{
+.sp-only {
     display: inline;
 }
 
-.sp-hide{
+.sp-hide {
     display: none;
 }
 
-.information-img{
-    height: 200px;
+/* 店舗情報 */
+
+.information-image {
+    height: 150px;
 }
 
-.information-title{
-    font-size: 45px;
-    padding-top: 50px;
-    margin-bottom: 0px;
+.information-title {
+    font-size: 42px;
+    padding-top: 45px;
+    margin-bottom: 17px;
 }
 
-.information-caram{
+.information-container {
     flex-direction: column;
     align-items: center;
     gap: 40px;
     padding: 20px;
 }
 
-.information-text-box{
+.information-details {
     border-top: solid 1.3px black;
     border-bottom: solid 1.3px black;
 }
 
-.information-text{
+.information-text {
     font-size: 13px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
-.omise-img{
+.store-image {
     width: 250px;
 }
 
-.footer-text{
+/* フッター */
+
+.footer-copyright {
     margin-top: 6px;
     font-size: 10px;
 }
 
+/* ランキングページ */
 
-
-
-
-.rankingu-box{
-    background-image: url(./写真/大理石.avif);
+.ranking-content {
+    background-image: url(./images/marble.avif);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -751,23 +752,25 @@ li::marker{
     background-position: center;
 }
 
-.rankingu-title{
+.ranking-title {
     font-size: 33px;
     font-family: "Emilys Candy", serif;
     text-align: center;
     color:black;
     text-shadow: 1px 2px 3px grey;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
-.rankingu-gazou-box{
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
-    padding: 20px;
+.ranking-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px 20px 20px;
+    justify-items: center;
+    
 }
 
-.rankingu-subtitle{
+.cat-name {
     color: black;
     font-size: 18px;
     text-shadow: 1px 2px 3px white;
@@ -776,81 +779,79 @@ li::marker{
     margin-bottom:0px;
 }
 
-.neko-gazou-box{
+.cat-image {
     display: block;
     width: 160px;
     height: 160px;
-    margin-top: 0px;
+    margin-top: 10px;
     border-radius: 40px;
 }
 
-.rankingu-text{
-    font-size: 12px;
-    text-align: left;
+.cat-information {
+    font-size: 13px;
+    text-align: center;
     margin-top: 5px;
 }
 
-.neko-box1{
-    order: 1;
+.cat-card-first {
+    grid-column: 1 / 3;
 }
 
-.neko-box2{
-    order: 2;
-    margin-right: 190px;
-    margin-top: 30px;
+.cat-card-second {
+    grid-column: 1;
 }
 
-.neko-box3{
-    order: 3;
-    margin-left: 190px;
-    margin-top: -278px;
+.cat-card-third {
+    grid-column: 2;
 }
 
+.sp-only {
+    display: inline;
+}
 
+/* お約束ページ */
 
-
-
-.yakusoku-title{
+.rules-title {
     font-size: 40px;
     font-family: "Emilys Candy", serif;
     text-align: center;
     color:black;
     text-shadow: 1px 2px 3px grey;
-    padding-top: 40px;
+    padding-top: 20px;
     margin-bottom: 20px;
 }
 
-.yakusoku-sub-title{
+.rules-introduction {
     font-size: 16px;
     font-family: "Emilys Candy", serif;
     text-align: center;
     color:black;
     text-shadow: 1px 2px 3px white;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     border-top: solid black 1px;
 }
-.yakusoku-sub-title2{
+
+.rules-notice {
     font-size: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-bottom: solid black 1px;
 }
 
-.yakusoku-ul li{
+.rules-list li {
     font-size: 13px;
     margin-left: 20px;
     margin-bottom: 15px;
 }
 
-.yakusoku-ul li::marker{
+.rules-list li::marker {
    font-size: 0.7em;
 }
 
+/* ハンバーガーメニュー */
 
-
-.hamburger-menu{
+.hamburger-menu {
     display: inline;
 }
-
 
 .menu-btn {
     position: absolute;
@@ -882,10 +883,8 @@ li::marker{
     top: 8px;
 }
 
-
-
 #menu-btn-check:checked ~ .menu-btn span {
-    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    background-color: rgba(255, 255, 255, 0);
 }
 #menu-btn-check:checked ~ .menu-btn span::before {
     bottom: 0;
@@ -911,15 +910,18 @@ li::marker{
     border-top : solid 1px white;
     border-bottom: solid 1px white;
     opacity: 0.9;
-    transition: all 0.5s;/*アニメーション設定*/
+    transition: all 0.5s;
 }
+
 .menu-content ul {
     padding: 70px 10px 0;
 }
+
 .menu-content ul li {
     border-bottom: solid 1px #ffffff;
     list-style: none;
 }
+
 .menu-content ul li a {
     display: block;
     width: 100%;
@@ -942,21 +944,18 @@ li::marker{
     top: 16px;
 }
 
-
-
-
 #menu-btn-check:checked ~ .menu-content {
     display: inline;
 }
 
-nav ul{
+nav ul {
     top:90px ;
     right: 50px;
     display: block;
     position: static;
 }
 
-nav li{
+nav li {
     margin-left: 40px;
     padding-top: 40px;
     list-style: none;
